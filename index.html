@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SkuLL | Discord & Minecraft Professional</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;800&family=Space+Grotesk:wght@300;700&display=swap" rel="stylesheet">
+    
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #050505;
+            color: #ffffff;
+            overflow-x: hidden;
+            scroll-behavior: smooth;
+        }
+
+        /* The "Old Style" Purple Glow */
+        .neon-purple-text {
+            color: #fff;
+            text-shadow: 0 0 10px #a855f7, 0 0 20px #a855f7, 0 0 40px #a855f7;
+        }
+
+        /* The New White Neon Style */
+        .neon-white-intro {
+            color: #ffffff;
+            font-family: 'Space Grotesk', sans-serif;
+            text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 20px #fff, 0 0 40px #fff;
+            letter-spacing: 2px;
+            font-weight: 700;
+        }
+
+        .glass {
+            background: rgba(255, 255, 255, 0.03);
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .btn-glow:hover {
+            box-shadow: 0 0 20px rgba(168, 85, 247, 0.6);
+            transform: translateY(-2px);
+        }
+
+        .pricing-card:hover {
+            border-color: #a855f7;
+            background: rgba(168, 85, 247, 0.05);
+        }
+
+        /* Animated Background */
+        #particles-js {
+            position: fixed;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+            top: 0;
+            left: 0;
+        }
+
+        @keyframes pulse-white {
+            0%, 100% { opacity: 1; }
+            50% { opacity: 0.7; }
+        }
+        .animate-pulse-white { animation: pulse-white 2s infinite; }
+    </style>
+</head>
+<body>
+
+    <div id="particles-js"></div>
+
+    <!-- Navbar -->
+    <nav class="fixed w-full z-50 glass py-4 px-8 border-b border-white/5 flex justify-between items-center">
+        <div class="text-2xl font-extrabold tracking-tighter neon-purple-text">SkuLL</div>
+        <div class="hidden md:flex space-x-8 text-xs font-bold uppercase tracking-widest">
+            <a href="#home" class="hover:text-purple-400 transition">Home</a>
+            <a href="#about" class="hover:text-purple-400 transition">About</a>
+            <a href="#projects" class="hover:text-purple-400 transition">Projects</a>
+            <a href="#services" class="hover:text-purple-400 transition">Pricing</a>
+            <a href="#contact" class="px-4 py-2 bg-purple-600 rounded-lg hover:bg-purple-700 transition">Contact</a>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="h-screen flex flex-col justify-center items-center text-center px-4">
+        <div data-aos="zoom-in" data-aos-duration="1000">
+            <h1 class="text-7xl md:text-9xl font-black mb-2 neon-purple-text tracking-tighter">SkuLL</h1>
+            <h2 class="text-2xl md:text-4xl neon-white-intro animate-pulse-white mb-8">I AM SKU<span class="text-purple-500">LL</span></h2>
+            <p class="text-gray-400 text-lg md:text-xl max-w-xl mx-auto mb-10 font-light">
+                Professional <span class="text-white">Discord Developer</span> & <span class="text-white">Minecraft Cinematic</span> Artist.
+            </p>
+            <div class="flex gap-4 justify-center">
+                <a href="#projects" class="bg-purple-600 px-8 py-3 rounded-full font-bold btn-glow transition">My Work</a>
+                <a href="#contact" class="glass px-8 py-3 rounded-full font-bold hover:bg-white hover:text-black transition">Discord</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-20 max-w-6xl mx-auto px-6">
+        <div class="grid md:grid-cols-2 gap-12 items-center">
+            <div data-aos="fade-right">
+                <h3 class="text-purple-500 font-bold tracking-widest mb-2 uppercase text-sm">Identity</h3>
+                <h2 class="text-4xl font-bold mb-6">Building Digital Worlds</h2>
+                <p class="text-gray-400 leading-relaxed mb-6">
+                    I am a skilled Discord developer specializing in <span class="text-white font-semibold">Node.js</span> and <span class="text-white font-semibold">Discord.js</span>. I create bots that aren't just tools, but core parts of your community experience.
+                </p>
+                <p class="text-gray-400 leading-relaxed">
+                    As a <span class="text-blue-400 font-semibold">Minecraft Replay Mod Professional</span>, I capture gameplay with cinematic precision, utilizing high-end shaders and smooth camera transitions to tell a story.
+                </p>
+            </div>
+            <div class="grid grid-cols-2 gap-4" data-aos="fade-left">
+                <div class="glass p-6 rounded-2xl text-center">
+                    <i class="fab fa-node-js text-3xl text-green-500 mb-2"></i>
+                    <p class="text-xs font-bold uppercase">Node.js</p>
+                </div>
+                <div class="glass p-6 rounded-2xl text-center">
+                    <i class="fab fa-discord text-3xl text-blue-500 mb-2"></i>
+                    <p class="text-xs font-bold uppercase">Discord.js</p>
+                </div>
+                <div class="glass p-6 rounded-2xl text-center">
+                    <i class="fas fa-database text-3xl text-yellow-500 mb-2"></i>
+                    <p class="text-xs font-bold uppercase">MongoDB</p>
+                </div>
+                <div class="glass p-6 rounded-2xl text-center">
+                    <i class="fas fa-video text-3xl text-purple-500 mb-2"></i>
+                    <p class="text-xs font-bold uppercase">Replay Mod</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="py-20 bg-black/50">
+        <div class="max-w-7xl mx-auto px-6">
+            <h2 class="text-4xl font-bold mb-12 text-center neon-purple-text">Featured Projects</h2>
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- Discord Bot -->
+                <div class="glass rounded-3xl overflow-hidden p-8 hover:border-purple-500 transition duration-500" data-aos="fade-up">
+                    <span class="text-purple-500 text-[10px] font-bold uppercase tracking-widest">Discord Development</span>
+                    <h3 class="text-2xl font-bold mt-2 mb-4">Eco-Mod System</h3>
+                    <p class="text-gray-400 text-sm mb-6">Advanced Moderation + Economy (like OwO). Includes levels, shop, and logs.</p>
+                    <button class="w-full py-2 border border-white/10 rounded-lg hover:bg-white hover:text-black transition text-sm font-bold">VIEW DEMO</button>
+                </div>
+
+                <!-- Minecraft Project -->
+                <div class="glass rounded-3xl overflow-hidden p-8 hover:border-white transition duration-500" data-aos="fade-up" data-aos-delay="100">
+                    <span class="text-white text-[10px] font-bold uppercase tracking-widest">Minecraft Cinematic</span>
+                    <h3 class="text-2xl font-bold mt-2 mb-4">Shader Replays</h3>
+                    <p class="text-gray-400 text-sm mb-6">Professional records using high-end shaders and custom camera pathing.</p>
+                    <button class="w-full py-2 border border-white/10 rounded-lg hover:bg-white hover:text-black transition text-sm font-bold">VIEW REPLAY</button>
+                </div>
+
+                <!-- Custom Systems -->
+                <div class="glass rounded-3xl overflow-hidden p-8 hover:border-purple-500 transition duration-500" data-aos="fade-up" data-aos-delay="200">
+                    <span class="text-purple-500 text-[10px] font-bold uppercase tracking-widest">Systems</span>
+                    <h3 class="text-2xl font-bold mt-2 mb-4">Ticket Pro</h3>
+                    <p class="text-gray-400 text-sm mb-6">A custom ticket and support system with transcript logging and auto-assign.</p>
+                    <button class="w-full py-2 border border-white/10 rounded-lg hover:bg-white hover:text-black transition text-sm font-bold">VIEW DEMO</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing Section -->
+    <section id="services" class="py-20 max-w-5xl mx-auto px-6">
+        <h2 class="text-4xl font-bold mb-16 text-center">Service <span class="text-purple-500 underline">Tiers</span></h2>
+        <div class="grid md:grid-cols-2 gap-8">
+            <!-- Basic -->
+            <div class="glass p-10 rounded-3xl pricing-card transition text-center" data-aos="flip-left">
+                <h4 class="font-bold text-gray-400 uppercase tracking-widest mb-4">Basic</h4>
+                <div class="text-5xl font-bold mb-8">$1<span class="text-lg font-normal text-gray-500">.00</span></div>
+                <ul class="text-gray-400 space-y-4 mb-10 text-sm">
+                    <li><i class="fas fa-check text-purple-500 mr-2"></i> Basic Dev Tasks</li>
+                    <li><i class="fas fa-check text-purple-500 mr-2"></i> Minecraft Shader Setup</li>
+                    <li><i class="fas fa-check text-purple-500 mr-2"></i> Replay Recording</li>
+                    <li><i class="fas fa-check text-purple-500 mr-2"></i> Bug Fixing</li>
+                </ul>
+                <a href="#contact" class="block w-full py-3 bg-white text-black font-bold rounded-xl hover:bg-gray-200 transition">Get Started</a>
+            </div>
+
+            <!-- Standard -->
+            <div class="glass p-10 rounded-3xl pricing-card border-purple-500/50 border-2 transition text-center relative shadow-2xl shadow-purple-900/20" data-aos="flip-right">
+                <div class="absolute -top-4 left-1/2 -translate-x-1/2 bg-purple-600 text-[10px] px-4 py-1 rounded-full font-bold uppercase">Popular</div>
+                <h4 class="font-bold text-purple-400 uppercase tracking-widest mb-4">Standard</h4>
+                <div class="text-5xl font-bold mb-8">$2<span class="text-lg font-normal text-gray-500">.00</span></div>
+                <ul class="text-gray-400 space-y-4 mb-10 text-sm">
+                    <li><i class="fas fa-check text-purple-500 mr-2"></i> Custom Economy Bots</li>
+                    <li><i class="fas fa-check text-purple-500 mr-2"></i> Leveling/XP Systems</li>
+                    <li><i class="fas fa-check text-purple-500 mr-2"></i> Advanced Ticket System</li>
+                    <li><i class="fas fa-check text-purple-500 mr-2"></i> Full Replay Edits</li>
+                </ul>
+                <a href="#contact" class="block w-full py-3 bg-purple-600 text-white font-bold rounded-xl hover:bg-purple-700 transition">Hire Now</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="py-20 max-w-6xl mx-auto px-6">
+        <div class="grid md:grid-cols-2 gap-8">
+            <div class="glass p-8 rounded-3xl relative">
+                <i class="fas fa-quote-right absolute top-8 right-8 text-white/10 text-5xl"></i>
+                <p class="text-gray-300 italic mb-6">"SkuLL built our custom ticket bot in just 24 hours. The efficiency is unmatched for the price. Highly recommend!"</p>
+                <div class="font-bold text-white">EdgeStreamZ <span class="text-purple-500 block text-xs uppercase">Server Owner</span></div>
+            </div>
+            <div class="glass p-8 rounded-3xl relative">
+                <i class="fas fa-quote-right absolute top-8 right-8 text-white/10 text-5xl"></i>
+                <p class="text-gray-300 italic mb-6">"I needed a high-end cinematic for my YouTube channel intro. SkuLL delivered exactly what I imagined."</p>
+                <div class="font-bold text-white">DictatorDemo <span class="text-purple-500 block text-xs uppercase">Content Creator</span></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 text-center px-6">
+        <div class="max-w-4xl mx-auto glass p-12 md:p-20 rounded-[3rem] border border-white/5 relative overflow-hidden">
+            <div class="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-transparent via-purple-500 to-transparent"></div>
+            <h2 class="text-4xl md:text-5xl font-bold mb-6">Let's <span class="neon-purple-text">Connect</span></h2>
+            <p class="text-gray-400 mb-12">Click to copy my Discord handle and reach out for projects.</p>
+            
+            <div class="flex flex-col items-center">
+                <div class="group relative cursor-pointer" onclick="copyDiscord()">
+                    <div class="px-8 py-4 bg-black/50 rounded-2xl border border-white/10 flex items-center gap-4 group-hover:border-purple-500 transition duration-300">
+                        <i class="fab fa-discord text-3xl text-blue-500"></i>
+                        <span id="discord-tag" class="text-2xl font-bold tracking-widest text-white">_skull_.</span>
+                        <i class="far fa-copy text-gray-600 group-hover:text-white transition"></i>
+                    </div>
+                    <span id="copy-notif" class="absolute -bottom-8 left-1/2 -translate-x-1/2 text-purple-500 text-xs font-bold uppercase opacity-0 transition-all">Copied to Clipboard!</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-10 border-t border-white/5 text-center text-gray-600 text-xs uppercase tracking-[0.4em]">
+        © 2024 SkuLL Development // _skull_.
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script>
+        // Init Animations
+        AOS.init({ duration: 1000, once: true });
+
+        // Copy Discord Function
+        function copyDiscord() {
+            const tag = document.getElementById('discord-tag').innerText;
+            navigator.clipboard.writeText(tag);
+            const notif = document.getElementById('copy-notif');
+            notif.style.opacity = '1';
+            notif.style.transform = 'translate(-50%, -5px)';
+            setTimeout(() => {
+                notif.style.opacity = '0';
+                notif.style.transform = 'translate(-50%, 0)';
+            }, 2000);
+        }
+
+        // Particle Background
+        particlesJS("particles-js", {
+            "particles": {
+                "number": { "value": 60, "density": { "enable": true, "value_area": 800 } },
+                "color": { "value": "#ffffff" },
+                "shape": { "type": "circle" },
+                "opacity": { "value": 0.2, "random": true },
+                "size": { "value": 2, "random": true },
+                "line_linked": { "enable": true, "distance": 150, "color": "#a855f7", "opacity": 0.1, "width": 1 },
+                "move": { "enable": true, "speed": 1, "direction": "none", "random": true, "straight": false, "out_mode": "out", "bounce": false }
+            },
+            "interactivity": {
+                "detect_on": "canvas",
+                "events": { "onhover": { "enable": true, "mode": "grab" }, "onclick": { "enable": true, "mode": "push" }, "resize": true },
+                "modes": { "grab": { "distance": 140, "line_linked": { "opacity": 0.5 } } }
+            },
+            "retina_detect": true
+        });
+    </script>
+</body>
+</html>
